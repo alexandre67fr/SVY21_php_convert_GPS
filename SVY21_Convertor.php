@@ -34,7 +34,7 @@ class SVY21_Convertor{
 		return $this->a * (($this->A0 * $latR) - ($this->A2 * sin(2 * $latR)) + ($this->A4 * sin(4 * $latR)) - ($this->A6 * sin(6 * $latR)));
 	}
 	private function calcRho($sin2Lat){
-		$num = $this->a * (1 - $this.e2);
+		$num = $this->a * (1 - $this->e2);
 		$denom = pow(1 - $this->e2 * $sin2Lat, 3. / 2.);
 		return $num / $denom;
 	}
