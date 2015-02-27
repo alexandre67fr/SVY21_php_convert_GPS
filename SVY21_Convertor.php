@@ -6,8 +6,6 @@ class SVY21_Convertor{
 
 	public function __construct()
 	{
-		parent::__construct();
-
 		$this->f = 1/298.257223563;
 		$this->b = $this->a * (1 - $this->f);
         $this->e2 = (2 * $this->f) - ($this->f * $this->f);
